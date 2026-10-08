@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Harish Trading Academy | Free Market Learning</title>
+  <meta name="description" content="ಕನ್ನಡದಲ್ಲಿ ಷೇರು ಮಾರುಕಟ್ಟೆ ಮತ್ತು Price Action ಕಲಿಯಿರಿ. ಉಚಿತ ಟೆಲಿಗ್ರಾಂ ಚಾನೆಲ್.">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2880092879039918');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2880092879039918&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Kannada', sans-serif;
+    }
+
+    /* Single screen fit - Zero scroll on mobile */
+    html, body {
+      height: 100%;
+      min-height: 100vh;
+      background: radial-gradient(circle at 50% 20%, #0d1527 0%, #040813 100%);
+      color: #ffffff;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .glow-gold {
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.35) 0%, transparent 70%);
+      filter: blur(55px);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 390px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(245, 158, 11, 0.28);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 20px 18px 16px;
+      text-align: center;
+      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.8), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    }
+
+    .logo-box {
+      position: relative;
+      width: 86px;
+      height: 86px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #f59e0b, #ef4444, #38bdf8);
+      box-shadow: 0 0 22px rgba(245, 158, 11, 0.5);
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      background: #0b1329;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 12.5px;
+      color: #fbbf24;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: 0.4px;
+    }
+
+    .verified-icon {
+      width: 14px;
+      height: 14px;
+      fill: #fbbf24;
+    }
+
+    .kannada-tag {
+      font-size: 13px;
+      font-weight: 600;
+      color: #38bdf8;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 8px;
+      background: linear-gradient(180deg, #ffffff 10%, #e2e8f0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.pitch {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .features {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 16px;
+      background: rgba(2, 6, 23, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .features li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: #f1f5f9;
+      font-weight: 500;
+    }
+
+    .features li span.tick {
+      color: #fbbf24;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .cta-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #ffffff;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .cta-primary {
+      background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #06b6d4 100%);
+      box-shadow: 0 4px 18px rgba(14, 165, 233, 0.5);
+      animation: pulseBlue 2s infinite ease-in-out;
+      margin-bottom: 10px;
+    }
+
+    @keyframes pulseBlue {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 12px rgba(14, 165, 233, 0.4), 0 0 24px rgba(245, 158, 11, 0.25);
+      }
+      50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 22px rgba(14, 165, 233, 0.75), 0 0 35px rgba(245, 158, 11, 0.4);
+      }
+    }
+
+    .cta-secondary {
+      background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%);
+      color: #05101f;
+      box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+      animation: pulseGold 2.2s infinite ease-in-out;
+    }
+
+    @keyframes pulseGold {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(245, 158, 11, 0.35);
+      }
+      50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 22px rgba(245, 158, 11, 0.7);
+      }
+    }
+
+    .cta-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+      animation: shimmer 2.4s infinite;
+    }
+
+    @keyframes shimmer {
+      100% { left: 100%; }
+    }
+
+    .cta-btn svg {
+      width: 19px;
+      height: 19px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .btn-sub {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 500;
+      opacity: 0.92;
+      margin-top: 1px;
+    }
+
+    .disclaimer {
+      margin-top: 12px;
+      font-size: 10px;
+      color: #64748b;
+      line-height: 1.35;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow-gold"></div>
+
+  <div class="card">
+    
+    <!-- Profile Logo (Embedded Base64) -->
+    <div class="logo-box">
+      <img src="data:image/jpeg;base64,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" alt="Harish Trading Academy">
+    </div>
+
+    <!-- Trader Badge -->
+    <div class="badge">
+      <svg class="verified-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      Harish Trading Academy
+    </div>
+
+    <!-- Kannada Welcome Tag -->
+    <div class="kannada-tag">ನಮಸ್ಕಾರ! ಕನ್ನಡದಲ್ಲಿ ಷೇರು ಮಾರುಕಟ್ಟೆ</div>
+
+    <!-- Meta-Safe Headline -->
+    <h1>Learn Price Action & Daily Market Levels</h1>
+
+    <!-- Subtitle -->
+    <p class="pitch">
+      ಕನ್ನಡದಲ್ಲೇ ಕಲಿಯಿರಿ Live Market Chart Analysis & Setups. ಯಾವುದೇ ತಪ್ಪು ಟ್ರೇಡ್ ಮಾಡದೆ ಜ್ಞಾನದಿಂದ ಕಲಿಯಿರಿ.
+    </p>
+
+    <!-- Kannada Bullet Highlights -->
+    <ul class="features">
+      <li><span class="tick">✔</span> <span><strong>Daily Levels:</strong> Nifty & BankNifty ಲೈವ್ ಚಾರ್ಟ್ ಲೆವೆಲ್ಸ್</span></li>
+      <li><span class="tick">✔</span> <span><strong>Price Action:</strong> ಸರಳ ಕನ್ನಡದಲ್ಲಿ Chart Setups ಕಲಿಯಿರಿ</span></li>
+      <li><span class="tick">✔</span> <span><strong>Free Community:</strong> 100% ಉಚಿತ ಕಲಿಕಾ ತಾಣ</span></li>
+    </ul>
+
+    <!-- CTA 1 (Primary Cyan-Blue) -->
+    <a href="https://t.me/+px7TdI5Z2_U5ZDM1" onclick="fbq('track', 'Subscribe');" class="cta-btn cta-primary" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+      <div>
+        <span>JOIN FREE ON TELEGRAM</span>
+        <span class="btn-sub">(ಉಚಿತವಾಗಿ ಸೇರಿರಿ)</span>
+      </div>
+    </a>
+
+    <!-- CTA 2 (Royal Kannada Gold) -->
+    <a href="https://t.me/+px7TdI5Z2_U5ZDM1" onclick="fbq('track', 'Subscribe');" class="cta-btn cta-secondary" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+      <div>
+        <span>JOIN FREE ON TELEGRAM</span>
+        <span class="btn-sub">(ಈಗಲೇ ಉಚಿತವಾಗಿ ಸೇರಿರಿ)</span>
+      </div>
+    </a>
+
+    <!-- Safe Meta Compliance Disclaimer -->
+    <div class="disclaimer">
+      <strong>ಗಮನಿಸಿ:</strong> ಇದು ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ. ಯಾವುದೇ ಹೂಡಿಕೆ ಸಲಹೆ ನೀಡುವುದಿಲ್ಲ. ಷೇರು ಮಾರುಕಟ್ಟೆ ಅಪಾಯಗಳಿಗೆ ಒಳಪಟ್ಟಿರುತ್ತದೆ.
+    </div>
+
+  </div>
+
+</body>
+</html>
